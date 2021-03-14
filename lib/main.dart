@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) => MaterialApp(
         debugShowCheckedModeBanner: false,
         title: title,
-        theme: ThemeData(primarySwatch: Colors.deepOrange),
+        theme: ThemeData(primarySwatch: Colors.teal),
         home: MainPage(),
       );
 }
@@ -50,11 +50,11 @@ class _MainPageState extends State<MainPage> {
       items: [
         BottomNavigationBarItem(
           icon: Text('Refresh', style: style),
-          title: Text('ListView'),
+          label: 'ListView',
         ),
         BottomNavigationBarItem(
           icon: Text('Refresh', style: style),
-          title: Text('GridView'),
+          label: 'GridView',
         ),
       ],
       onTap: (int index) => setState(() => this.index = index),
